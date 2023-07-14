@@ -1,0 +1,244 @@
+.home {
+    display: flex;
+}
+
+.productContainer{
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filters {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 86vh;
+}
+
+.filters > span {
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.products {
+    width: 30%;
+    margin: 10px;
+}
+
+.cartitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.navbarItems{
+    display: flex;
+}
+
+.cartItemImg{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cartItemDetail{
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.summary{
+    width: 30%
+}
+
+.pageContainer {
+    margin: 3rem;
+}
+
+.pageHeader {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .forgotPasswordLink {
+    cursor: pointer;
+    color: #00cc66;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  
+
+  .signInBar{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: inherit;
+}
+
+.signInText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signInButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #00cc66;
+  border-radius: 50%;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.nav-menu.active{
+    display: none;
+}
+
+@media (max-width: 771px) {
+    .filters{
+        display: none;
+        /* width: 40%;
+        padding: 10px;
+        margin: 5px; */
+    }
+
+    .filters > span {
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 18px !important;
+    }
+
+    .productContainer{
+        /* width: 58%; */
+        width: 100%;
+        padding: 0;
+    }
+
+    .search{
+        display: none !important;
+    }
+    .products{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100;
+        top: 5rem;
+        width: 40%;
+        height: 90vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+
+.login{
+    background-color: rgb(0, 0, 0, .7);
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.login::before{
+    content: '';
+    background: url('../img/Glo.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.login__container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    align-items: center;
+}
+
+.login__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+}
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__signInButton {
+    background-color: blue;
+    color: #fff;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: lightblue;
+}
+
+.login__registerButton{
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: darkblue;
+}
